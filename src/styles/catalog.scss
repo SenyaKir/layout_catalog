@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: $font-mein;
+  box-sizing: border-box;
+}
+
+.catalog {
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, $map-width);
+  row-gap: $row-gap;
+  column-gap: $column-gap;
+}
