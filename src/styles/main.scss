@@ -4,7 +4,7 @@
   border: 1px #fff solid;
   color: $color-mein-accent;
 
-  transition: 300ms;
+  transition: $transition-time;
 
   &:hover {
     transform: scale(1.2);
@@ -25,7 +25,7 @@
     margin: 0 16px;
   }
 
-  &__title:hover {
+  .card:hover .card__title {
     color: #34568b;
   }
 
