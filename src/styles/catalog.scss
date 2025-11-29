@@ -7,7 +7,25 @@ body {
 .catalog {
   padding: 50px 40px;
   display: grid;
-  grid-template-columns: repeat(4, $map-width);
-  row-gap: $row-gap;
-  column-gap: $column-gap;
+  grid-template-columns: repeat(1, $map-width);
+  row-gap: 48px;
+  column-gap: 46px;
+  justify-content: center;
+}
+
+@media (min-width: 488px) {
+  .catalog{
+    grid-template-columns: repeat(2, $map-width);
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog{
+    grid-template-columns: repeat(3, $map-width);
+  }
+}
+@media (min-width: 1024px) {
+  .catalog{
+    grid-template-columns: repeat(4, $map-width);
+  }
 }
