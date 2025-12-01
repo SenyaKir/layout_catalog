@@ -28,7 +28,7 @@
     width: $card-image-width;
     height: $card-image-height;
     background-image: url(../images/imac.jpeg);
-    background-size: cover;
+    background-size: contain;
     margin: $image-mar-top $image-mar-hor $image-mar-bot;
   }
 
@@ -82,7 +82,7 @@
 
   &__buy {
     box-sizing: border-box;
-    padding: 0;
+    padding: 12px 0;
     margin: $but-margin;
     width: $but-width;
     height: $but-height;
