@@ -2,6 +2,7 @@
 
 Create an HTML page with a catalog. Develop semantic page structure as shown on [the mockup](https://www.figma.com/file/ojkArVazq7vsX0nbpn9CxZ/Moyo-%2F-Catalog-(ENG)?node-id=32249%3A354).
 
+e.
 - use `Header`, `Stars` and `Card` blocks from previous tasks but rewrite them using BEM and SCSS
 - remove old `data-qa` attributes
 - add `data-qa="nav-hover"` (not just `hover`) to the 4th nav link for testing (`Laptops & computers`)
@@ -28,8 +29,7 @@ Make all the changes smooth on hover (during 300ms):
 > Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline)
 
 *Important note*: In this task, you are allowed to link `*.scss` files directly in HTML `<link>` tags using `href` attribute.
-This is possible because [we use the Parcel library](https://en.parceljs.org/scss.html) to bundle your solution's source code.
-
+This is possible because [we use the Parcel library](https://en.parceljs.org/scss.html) to bundle your solution's source cod
 ## Checklist
 
 ❗️ Replace `<your_account>` with your GitHub username and copy the links to the `Pull Request` description:

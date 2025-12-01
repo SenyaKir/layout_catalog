@@ -5,27 +5,27 @@ body {
 }
 
 .catalog {
-  padding: 50px 40px;
+  padding: $catalog-padding-vertical $catalog-padding-horizontal;
   display: grid;
-  grid-template-columns: repeat(1, $map-width);
+  grid-template-columns: repeat(1, auto);
   gap: $row-gap $column-gap;
   justify-content: center;
 }
 
 @media (min-width: 488px) {
   .catalog {
-    grid-template-columns: repeat(2, $map-width);
+    grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (min-width: 768px) {
   .catalog {
-    grid-template-columns: repeat(3, $map-width);
+    grid-template-columns: repeat(3, auto);
   }
 }
 
 @media (min-width: 1024px) {
   .catalog {
-    grid-template-columns: repeat(4, $map-width);
+    grid-template-columns: repeat(4, auto);
   }
 }

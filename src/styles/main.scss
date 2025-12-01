@@ -1,13 +1,27 @@
 .card {
   box-sizing: border-box;
   width: $map-width;
-  border: 1px #fff solid;
+  border: 1px $white-color solid;
   color: $color-mein-accent;
 
-  transition: $transition-time;
+  transition: transform $transition-time;
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 16px;
+    color: $color-mein-accent;
+
+    transition: color $transition-time;
+  }
 
   &:hover {
     transform: scale(1.2);
+
+    .card__title {
+      color: $text-color-accent;
+    }
   }
 
   &__image {
@@ -16,17 +30,6 @@
     background-image: url(../images/imac.jpeg);
     background-size: cover;
     margin: 32px 19px 40px;
-  }
-
-  &__title {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    margin: 0 16px;
-  }
-
-  .card:hover .card__title {
-    color: #34568b;
   }
 
   &__code {
@@ -41,8 +44,9 @@
   &__reviews {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin: 0 16px 24px;
+
     &-text {
       font-weight: 400;
       font-size: 10px;
@@ -56,8 +60,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 166px;
-    height: 18px;
     margin: 0 16px;
 
     &-text {
@@ -74,6 +76,7 @@
       font-size: 16px;
       line-height: 18px;
       text-align: right;
+      color: $color-mein-accent;
     }
   }
 
@@ -84,17 +87,26 @@
     opacity: 1;
     border-radius: 5px;
     background-color: $color-accent;
-    color: #fff;
+    color: $white-color;
     border: none;
 
-    font-weight: 700;
+    font-weight: $but-font-weight;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+      background-color $transition-time,
+      color $transition-time,
+      border $transition-time;
+
     &:hover {
-      background-color: #fff;
+      background-color: $white-color;
       color: $color-accent;
       border: 1px $color-accent solid;
     }

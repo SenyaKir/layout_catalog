@@ -10,9 +10,9 @@
   }
 
   &__item {
-    font-size: 12px;
+    font-size: $nav-font-size;
     text-transform: uppercase;
-    margin-left: 20px;
+    margin-left: $nav-item-margin-left;
   }
 
   &__item:first-child {
@@ -20,13 +20,14 @@
   }
 
   &__link {
+    font-weight: $link-font-weight;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    height: 60px;
-    color: $color-link;
+    height: $nav-link-height;
+    color: $color-mein-accent;
 
-    transition: color 300ms;
+    transition: color $transition-time;
   }
 
   &__link:hover {
