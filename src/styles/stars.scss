@@ -4,7 +4,7 @@
   &__star {
     width: $star-size;
     height: $star-size;
-    margin-right: 4px;
+    margin-right: $stars-margin-right;
     background-position: center;
     background-repeat: no-repeat;
   }

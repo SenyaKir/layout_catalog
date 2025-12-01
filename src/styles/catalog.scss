@@ -1,7 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: $font-mein;
-  box-sizing: border-box;
 }
 
 .catalog {

@@ -1,15 +1,15 @@
 .card {
   box-sizing: border-box;
   width: $map-width;
-  border: 1px $white-color solid;
+  border: $border-width $white-color $border-style;
   color: $color-mein-accent;
 
   transition: transform $transition-time;
 
   &__title {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    font-weight: $title-font-weight;
+    font-size: $text-font-size;
+    line-height: $line-height-1;
     margin: 0 16px;
     color: $color-mein-accent;
 
@@ -25,18 +25,18 @@
   }
 
   &__image {
-    width: 160px;
-    height: 134px;
+    width: $card-image-width;
+    height: $card-image-height;
     background-image: url(../images/imac.jpeg);
     background-size: cover;
     margin: 32px 19px 40px;
   }
 
   &__code {
-    font-weight: 400;
+    font-weight: $text-font-weight;
     color: $color-secondary;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: $text2-font-size;
+    line-height: $line-height-2;
     text-align: left;
     margin: 4px 16px 16px;
   }
@@ -48,9 +48,9 @@
     margin: 0 16px 24px;
 
     &-text {
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 14px;
+      font-weight: $text-font-weight;
+      font-size: $text2-font-size;
+      line-height: $line-height-2;
       text-align: right;
       margin: 0;
     }
@@ -65,40 +65,38 @@
     &-text {
       margin: 0;
       color: $color-secondary;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 18px;
+      font-weight: $text-font-weight;
+      font-size: $text-font-size;
+      line-height: $line-height-1;
     }
 
     &-sum {
       margin: 0;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 18px;
+      font-weight: $sum-font-weight;
+      font-size: $sum-font-size;
+      line-height: $line-height-1;
       text-align: right;
       color: $color-mein-accent;
     }
   }
 
   &__buy {
-    margin: 16px;
-    width: 166px;
-    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: $but-margin;
+    width: $but-width;
+    height: $but-height;
     opacity: 1;
-    border-radius: 5px;
+    border-radius: $but-border-radius;
     background-color: $color-accent;
     color: $white-color;
     border: none;
 
     font-weight: $but-font-weight;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $but-font-size;
+    line-height: $but-line-height;
     text-align: center;
     text-transform: uppercase;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     transition:
       background-color $transition-time,
@@ -108,7 +106,7 @@
     &:hover {
       background-color: $white-color;
       color: $color-accent;
-      border: 1px $color-accent solid;
+      border: $border-width $color-accent $border-style;
     }
   }
 }
