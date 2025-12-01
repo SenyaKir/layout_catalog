@@ -10,7 +10,7 @@
     font-weight: $title-font-weight;
     font-size: $text-font-size;
     line-height: $line-height-1;
-    margin: 0 16px;
+    margin: 0 $title-margin-horizont;
     color: $color-mein-accent;
 
     transition: color $transition-time;
@@ -29,7 +29,7 @@
     height: $card-image-height;
     background-image: url(../images/imac.jpeg);
     background-size: cover;
-    margin: 32px 19px 40px;
+    margin: $image-mar-top $image-mar-hor $image-mar-bot;
   }
 
   &__code {
@@ -38,14 +38,14 @@
     font-size: $text2-font-size;
     line-height: $line-height-2;
     text-align: left;
-    margin: 4px 16px 16px;
+    margin: $code-mar-top $code-mar-hor $code-mar-bot;
   }
 
   &__reviews {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 16px 24px;
+    margin: 0 $reviews-mar-hor $reviews-mar-bot;
 
     &-text {
       font-weight: $text-font-weight;
